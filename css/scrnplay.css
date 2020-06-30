@@ -1,0 +1,29 @@
+body{overflow-y: scroll;}
+body::-webkit-scrollbar {
+	display:none
+}
+.scrnmain{width: 100%;background-color: #f4f5f8;min-height: 1080px;}
+.scrnsele{padding-top: 20px;padding-bottom: 20px;position: fixed;top: 0;left: 0;z-index: 99999;background: #fff;padding-right: 20px;transition: all 0.4s;}
+.seletext{font-weight: bold;margin-left: 20px;}
+.scrnnum{width: 90px;height: 30px;outline: none;color: #666;padding-left: 6px;border-radius: 4px;}
+.scrnvideo{width: 100%;}
+.playvideo{width: 49.7%;float: left;margin-left: 0.2%;margin-top: 2px;}
+.addvideo{width: 48%;padding-top: 200px;padding-bottom: 200px;margin-left: 15px;float: left;}
+.addvideo .btn{text-align: center;border:1px solid #666;width: 160px;margin:0 auto;height: 40px;line-height: 40px;color: #333;border-radius: 19px;}
+.addvideo .btn:hover{cursor: pointer;background-color: #1296db;color: #fff;border:1px solid #1296db;}
+.alert{width: 500px;height: 200px;background: #fff;margin:0 auto;margin-top: 200px;border-radius: 9px;position: relative;}
+.alertmb{position: fixed;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.6);top: 0;left: 0;display: none;}
+.alert .inp{padding-top: 80px;margin-left: 20px;}
+.alert .inp span{font-size: 16px;font-weight: bold;}
+.alert .inp input{width: 320px;height: 40px;background: #999;padding-left: 20px;color: #fff;margin-left: 10px;}
+.alebtn{width: 50px;height: 30px;background-color:#1296db;color:#fff;text-align: center;line-height: 30px;border-radius: 4px;position: absolute;bottom: 20px;right: 20px;cursor: pointer;}
+.clebtn{width: 15px;height: 15px;position: absolute;top: 20px;right: 20px;cursor: pointer;}
+.clebtn img{width: 100%;height: 100%;}
+.prompt{position: absolute;width: 130px;height: 14px;bottom: 30px;right: 60px;line-height: 14px;color: red;display: none;}
+.max{width: 30px;height: 30px;vertical-align: middle;margin-left: 6px;}
+.homebox{margin-left: 20px;display: inline-block;font-weight: bold;cursor: pointer;}
+.maxbox{display: inline-block;cursor: pointer;}
+.homeimg{width: 36px;height: 36px;vertical-align: middle;}
+.collbox{margin-left: 20px;display: inline-block;font-weight: bold;cursor: pointer;}
+
+

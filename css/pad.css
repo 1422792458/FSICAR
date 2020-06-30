@@ -1,0 +1,79 @@
+.header{width: 100%;}
+.logo{width: 20%;font-size: 24px;}
+.logo span{margin-left: 10%;}
+.nav{position: fixed;bottom: 0;left: 0;height: 40px;background-color: #1296db;width: 100%;z-index: 9999;}
+.nav li{width: 33%;text-align: center;font-size: 14px;padding: 0;margin: 0;}
+.btnbok input{width: 80%;}
+.btnbok{width: 68%;margin: 0;}
+.btnbok img{right:20%;}
+.main{width: 100%;}
+.playvideo{width: 100%;height: 400px;}
+.listvideo{width: 100%;margin-top: 20px;}
+.listvideo ul{width: 92%;padding:4%;height: auto;}
+.listvideo ul li{width: 30.5%;float: left;border-radius: 9px;}
+.listvideo ul li .mb{width: 100%;height: 100%;top: 0;left: 0;border-radius: 9px;}
+.listvideo ul li .livelima{width: 100%;height: 100%;}
+.listvideo ul li img{width: 100%;}
+.listvideo ul .active::before{display: none;}
+.listvideo ul .active .livelima{border:none;border-radius: 9px;}
+.listvideo ul .active .livelima{border-radius: 9px;}
+.listvideo ul li{overflow: hidden;margin-left: 4%;}
+.listvideo ul li:first-of-type{margin-top: 12px;}
+.listvideo ul li:nth-of-type(3n+1){margin-left: 0%;}
+.listvideo{height: auto;padding-bottom: 20px;}
+.top{height: auto;}
+.powmain{width: 100%;}
+.powmain .iconpow img{width: 25px;height: 25px;margin-right: 0;}
+.powmain .iconpow{height: 25px;line-height: 25px;margin-top: 10px;}
+.powmain .iconpow span{font-size: 12px;}
+.powmain h1{font-size: 14px;font-weight: bold;}
+.listvideo ul li:hover .mb{display: block;}
+.listvideo ul .active .livelima{width: 100%;}
+.powvideo{height: 60px;}
+.malivelist_mod{
+	width: 92%;
+	margin-left: 4%;
+}
+.malivelist_mod ul li{
+	width: 48%;
+	margin-left: 0;
+	margin-top: 10px;
+	height: 220px;
+}
+.malivelist_mod ul a:nth-of-type(even) li{margin-left: 4%;}
+.malivelist_mod ul li .li_mb{
+	display: block;
+}
+.shuaxin{
+	display: none;
+}
+.footer{padding-bottom: 60px;}
+.fotmain{width: 100%;}
+.logo{margin-right: 6px;}
+.listvideo ul li .mb{font-size: 12px;}
+.listvideo ul li{height: 120px;line-height: 120px;}
+.malivelist_mod ul li .li_mb{width: 15%;left:42.5%;top: 22%;}
+.malivelist_mod ul li .live_text p{font-size: 12px;margin-top: 2px;}
+.pbbox{top: 400px;right: 0%;width: 55px;}
+.pbbox .come_ad{height: 55px;}
+.pbbox .come_top{height: 40px;}
+.pbbox .come_ad .code{width: 80px;height: 80px;}
+.malivelist_mod ul li .live_top{height: 80%;}
+.downl{margin-left: 0;width: 8%;}
+.downl span{display: none;}
+.downlcon{position: fixed;width: 100%;left: 0;bottom: 40px !important;top:unset;}
+.footma{width: 100%;}
+.app{width: 100%;}
+.footertop .about{width: 100%;text-align: center;}
+.footertop p{text-align: center;width: 100%;}
+.foottit{margin-bottom: 2px;}
+.appcon{display: flex;align-items:center;justify-content: center;margin-bottom: 10px;}
+.appad{text-align: center;}
+.appad{width: 100%;}
+.appad img{width: 30%;}
+.downlcon{height: 455px;}
+
+@media screen and (min-width:900px) and (max-width: 1100px) {
+    .playvideo{height: 520px;}
+    .malivelist_mod ul li{height: 280px;}
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1,width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>综合数据服务平台</title>
+		<link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+		<link rel="stylesheet" href="./css/login.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/vector.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="./js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+		<script src="./component/EasyPlayer-element.min.js"></script>
+		<script src="./js/main.js"></script>
+		<link rel="stylesheet" href="./css/mainstyle.css">
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" media="screen and (min-width:320px) and (max-width:700px)" href="css/phone.css"  />
+		<link rel="stylesheet" media="screen and (min-width:700px) and (max-width:1100px)" href="css/pad.css"  />
+		<link rel="stylesheet" media="screen and (min-width:1100px) and (max-width:1400px)" href="css/minpc.css"  />
+		<link rel="icon" href="./img/wurenji.png" type="image/x-icon">
+	</head>
+
+	<body class="fn-clear">
+		<div class="top">
+			<div class="header">
+				<div class="logo">
+					<img src="./img/logo.png" alt="">
+				</div>
+				<ul class="nav">
+					<a href=""><li class="active">首页</li></a>
+					<a href="./aa.html"><li>正在直播</li></a>
+					<a href="./video_find.html"><li class="touchbtn">直播录像</li></a>
+					<a href="./user.html"><li>直播管理</li></a>
+					<a href="./scrnplay.html"><li>多屏播放</li></a>
+				</ul>
+				<p class="btnbok">
+					<input type="text" class="videourl" placeholder="请输入直播ID" value="">
+					<img src="./img/play.png" alt="" onclick="find_live();">
+				</p>
+				<div class="downl fl">
+					<img src="./img/dl.png" alt="">
+					<span>下载</span>
+					<div class="downlcon">
+						<div class="downad fl">
+							<p>安卓Android</p>
+							<img src="./img/videocond.png" alt="">
+							<a href="http://36.7.107.222:8888/app/fslcar.apk"><div class="downbtn">下载</div></a>
+						</div>
+						<div class="downios fl">
+							<p>苹果ios</p>
+							<img src="./img/ioscode.png" alt="">
+							<a href="http://36.7.107.222:8888/app/fslcar.ipa"><div class="downbtn">下载</div></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="main fn-clear">
+				<div class="playvideo">
+					<div id="video" class="indexvideo">
+						<easy-player
+					      video-url=""
+					      live="true"
+					      stretch="flase"
+					      class="easy_video"
+					      hasvideo="true"
+					      hasaudio="true"
+					      snap-url=""
+					    ></easy-player>
+					</div>
+				</div>
+				<div class="listvideo">
+					<ul>
+						<li class="liveli active">
+							<div class="mb"><span>直播名称:<br>main1</span></div>
+							<div class="livelima"><img src="./img/u=2528921964,4111382255&fm=26&gp=0.jpg" alt=""></div>
+						</li>
+						<li class='liveli'>
+							<div class="mb"><span>直播名称:<br>main2</span></div>
+							<div class="livelima"><img src="./img/u=2528921964,4111382255&fm=26&gp=0.jpg" alt=""></div>
+						</li>
+						<li class='liveli'>
+							<div class="mb"><span>直播名称:<br>main3</span></div>
+							<div class="livelima"><img src="./img/u=2528921964,4111382255&fm=26&gp=0.jpg" alt=""></div>
+						</li>
+						<li class='liveli'>
+							<div class="mb"><span>直播名称:<br>main4</span></div>
+							<div class="livelima"><img src="./img/u=2528921964,4111382255&fm=26&gp=0.jpg" alt=""></div>
+						</li>
+						<li class='liveli'>
+							<div class="mb"><span>直播名称:<br>main5</span></div>
+							<div class="livelima"><img src="./img/u=2528921964,4111382255&fm=26&gp=0.jpg" alt=""></div>
+						</li>
+						<li class='liveli'>
+							<div class="mb"><span>直播名称:<br>main6</span></div>
+							<div class="livelima"><img src="./img/u=2528921964,4111382255&fm=26&gp=0.jpg" alt=""></div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="powvideo">
+			<div class="powmain">
+				<h1 class="iconpow"><img src="./img/how.png" alt="">直播列表</h1>
+			</div>
+		</div>
+		<div class="malivelist fn-clear">
+			<div class="malivelist_mod">
+				<ul class="fn-clear live_topli">
+					<a href="./videocon.html"><li>
+						<div class="live_top"><img src="./img/59e464b9892fd237fe8ca3f7cd4ec3e2.jpg" alt=""></div>
+						<div class="live_text">			
+							<p>直播名称:</p>
+							<p class="live_zt">直播状态:</p>
+						</div>
+						<img src="./img/lipaay.png" alt="" class="li_mb">
+					</li></a>	
+				</ul>
+				<div class="page">
+					<ul class="fn-clear">
+						<a href="javascript:;"><li>上一页</li></a>
+						<a href="javascript:;" id="nextpageli"><li>下一页</li></a>
+					</ul>
+				</div>	
+			</div>
+			
+		</div>
+
+		<div class="footertop">
+			<div class="footma fn-clear">	
+				<div class="fl app">
+					<p class="foottit">相关应用下载</p>
+					<div class="appcon fn-clear">
+						<div class="appad fl">
+							<img src="./img/videocond.png" alt="">
+							<p>安卓Android</p>
+						</div>
+						<div class="appad fl">
+							<img src="./img/ioscode.png" alt="">
+							<p>苹果ios</p>
+						</div>
+					</div>
+				</div>
+				<div class="fr about">
+					<p class="foottit">联系我们</p>
+					<p>电话:0551-65330903</p>
+					<p>邮箱:liaohailin100@163.com</p>
+				</div>
+				<div class="fr about">
+					<p class="foottit">友情链接</p>
+					<a href="./appprivacy.html">FSICAR app隐私政策</a><br>
+					<a href="http://36.7.107.222:8888/app_about/">FSICAR app详情介绍</a><br>
+					<a href="https://obsproject.com/">OBS 推流软件</a><br>
+					<a href="https://www.ieway.cn/">EV录屏</a>
+				</div>			
+			</div>	
+		</div>
+		
+		<div class="footer">
+			<div class="fotmain">
+				<p><!-- Copyright ©2020某某某有限公司.All rights reserved. 皖ICP备00000000-0号 --><a href="http://36.7.107.222:8002" class="fr oliuser">独立用户入口</a></p>
+			</div>
+		</div>	
+		<!-- 侧边栏开始 -->
+		<div class="pbbox">
+			<a href="http://36.7.107.222:8888/app/fslcar.apk"><div class="come_ad">
+				<img src="./img/adzend.png" alt="">
+				<p>安卓</p>
+				<div class="code">
+					<img src="./img/videocond.png" alt="">
+				</div>
+			</div></a>
+			<a href="http://36.7.107.222:8888/app/fslcar.ipa"><div class="come_ad">
+				<img src="./img/ios.png" alt="">
+				<p>苹果</p>
+				<div class="code">
+					<img src="./img/ioscode.png" alt="">
+				</div>
+			</div></a>
+			<div class="come_top">
+				<img src="./img/top.png" alt="">
+			</div>
+		</div>
+		<!-- 侧边栏结束 -->
+
+<script type="text/javascript">
+	// 动态效果
+	$('.liveli').click( 
+		function () {
+			$('.liveli').removeClass("active");
+			$(this).addClass("active");  
+		}
+	);
+	$('.touchbtn').mousemove( 
+		function () {
+			$('.touch').show();
+		}
+	);
+	$('.touchbtn').mouseout( 
+		function () {
+			$('.touch').hide();
+		}
+	);
+	$('.come_top').click(function() {
+		$('html,body').animate({
+			"scrollTop": 0
+		}, 300);
+	});
+</script>
+
+		<!-- 登录界面 -->
+		<div id="container">
+			<div id="output">
+				<div class="login">
+				    <div class="login_title">
+				        <h1>综合数据服务平台</h1>
+				    </div>
+				    <div class="login_main">
+				        <div class="main_left"></div>
+				        <div class="main_right">
+				            <div class="right_title">用户登录</div>
+				            <div class="form">
+				                <div class="username">
+				                    <img src="./images/username.png" alt="">
+				                    <input type="text" placeholder="请输入用户名" class="lg_name">
+				                </div>
+				                <div class="password">
+				                    <img src="./images/password.png" alt="">
+				                    <input type="password" placeholder="请输入密码" class="lg_pswd">
+				                </div>				                
+				                <div class="yes_login" onclick="come_lg();"><a>登&nbsp;&nbsp;&nbsp;&nbsp;录</a></div>
+								<center><p style="margin-top:20px;font-size:12px;color:#FA6F03;">登录遇到问题，请联系管理员</p></center>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<!-- 登录界面 -->
+		<script type="text/javascript">
+		    $(function(){
+		        Victor("container", "output");   //登录背景函数
+		        $("#entry_name").focus();
+		        $(document).keydown(function(event){
+		            if(event.keyCode==13){
+		                $("#entry_btn").click();
+		            }
+		        });
+		    });
+		</script>
+	</body>
+</html>

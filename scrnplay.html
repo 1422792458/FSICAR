@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1,width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>多屏播放</title>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vector.js"></script>
+	<script type="text/javascript" src="./js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+	<script src="./component/EasyPlayer-element.min.js"></script>
+	<script src="./js/scrn.js"></script>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/scrnplay.css">
+	<link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1100px)" href="css/scrnplayphone.css"  />
+	<link rel="icon" href="./img/wurenji.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/listyle.css">
+</head>
+<body class="fn-clear">
+	<div class="scrnmain">
+		<div class="scrnsele">
+			<span class="seletext">显示模式:</span>
+			<select class="scrnnum">
+				<option value="4">四分屏</option>
+				<option value="16">十六分屏</option>
+			</select>
+			<div class="maxbox">
+				<span class="seletext">全屏显示</span>
+				<img src="./img/max.png" alt="" class="max">
+			</div>
+			<a href="./index.html?bz=lgon"><div class="homebox">
+				<span>回到首页</span>
+				<img src="./img/gethome.png" alt="" class="homeimg">
+			</div></a>
+			<div class="collbox">
+				<img src="./img/pre.png" alt="" class="max">
+			</div>
+		</div>
+		<div class="scrnvideo fn-clear">
+			<div class="palymain">
+				<div class="playvideo">
+					<easy-player
+				      video-url=""
+				      live="true"
+				      stretch="flase"
+				      class="easy_video"
+				      hasvideo="true"
+				      hasaudio="true"
+				      snap-url=""
+				    ></easy-player>
+				</div>
+			</div>
+			<div class="addvideo">
+				<div class="btn">添加屏幕</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="alertmb">
+		<div class="alert">
+			<p class="inp">
+				<span>请输入直播ID:</span>
+				<input type="text" class="videoid">
+			</p>
+			<p class="prompt">直播ID不能为空!</p>
+			<div class="alebtn">确定</div>
+			<div class="clebtn"><img src="./img/cle.png" alt=""></div>
+		</div>
+	</div>
+	
+</body>
+</html>

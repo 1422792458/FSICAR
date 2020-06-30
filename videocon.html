@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1,width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>流媒体页面</title>
+		<script type="text/javascript" src="./js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+		<script src="./component/EasyPlayer-element.min.js"></script>
+		<script src="./js/live_in.js"></script>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="icon" href="./img/wurenji.png" type="image/x-icon">
+		<link rel="stylesheet" href="./css/listyle.css">
+		<link rel="stylesheet" media="screen and (min-width:320px) and (max-width:1100px)" href="./css/liphone.css"  />
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" media="screen and (min-width:1100px) and (max-width:1400px)" href="css/minpc.css"  />
+	</head>
+
+	<body>
+		<div class="header erheader">
+			<div class="heamain fn-clear">
+				<div class="logo fl"><img src="./img/logo.png" alt=""></div>
+				<div class="nav">
+					<ul class="fn-clear">
+						<a href="./index.html?bz=lgon"><li>首页</li></a>
+						<a href="./aa.html"><li>正在直播</li></a>
+						<a href="./video_find.html"><li>直播录像</li></a>
+						<a href="./user.html"><li>用户管理</li></a>
+					</ul>
+				</div>
+				<div class="navbtn fr"><img src="./img/menu.png" alt=""></div>
+			</div>
+		</div>
+		<div class="mod">
+			<div class="liveroom">
+				<div class="room_top">
+					<span class="room_tit">未直播</span>
+					<span class="room_num"><img src="./img/look.png" alt="">0</span>
+				</div>
+				<div id="video">
+					<easy-player
+					      video-url=""
+					      live="true"
+					      stretch="flase"
+					      auto-play="true"
+					      class="easy_video"
+					></easy-player>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="fotmain">
+				<!-- <p>Copyright ©2020某某某某有限公司.All rights reserved. 皖ICP备00000000-0号</p> -->
+			</div>
+		</div>
+		<script>
+			$('.navbtn').click(
+				function () {
+					$(".nav").slideToggle(400);
+				}
+			);
+			var windowWidth = $(window).width();
+			$(document).ready(function(){ 
+				if(windowWidth > 900){
+					$('html,body').animate({
+						"scrollTop": 100
+					}, 600);
+				};
+			    
+			});
+		</script>
+	</body>
+</html>
